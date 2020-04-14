@@ -8,7 +8,7 @@ import PortfolioItem from "./PortfolioItem";
 function Portfolio(){
     return(
         <>
-        <h1>Portfolio</h1>
+        <h1>Check out my Projects</h1>
         <Container>
             <Row>
                 {projects.map((project)=>{

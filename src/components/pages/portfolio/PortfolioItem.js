@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
+import PortfolioBtn from "./portfolioBtn";
 
 // IMAGES
 //import GitLogo from "../../../assets/logo/git.png";
@@ -21,27 +22,25 @@ function PortfolioItem({projects}){
         <Col key={projects.id} className="project" md={4}>
             <Card>
                 <Card.Img src={projects.img} />
+                
                 <Card.Body>
                     <Card.Title>{projects.title}</Card.Title>
+                    <Card.Subtitle>Description</Card.Subtitle>
                     <Card.Text>{projects.discription}</Card.Text>
 
                     <Card.Subtitle>TechStack</Card.Subtitle>
                     <Row>
-                    {projects.html && <Col md={3}><Card.Img className="cardLogo" src={HtmlLogo} /></Col>}
-                    {projects.css && <Col md={3}><Card.Img className="cardLogo" src={CssLogo} /></Col>}
-                    {projects.js && <Col md={3}><Card.Img className="cardLogo" src={JsLogo} /></Col>}
-                    {projects.sass && <Col md={3}><Card.Img className="cardLogo" src={SassLogo} /></Col>}
-                    {projects.react && <Col md={3}><Card.Img className="cardLogo" src={ReactLogo} /></Col>}
-                    {projects.grunt && <Col md={3}><Card.Img className="cardLogo" src={GruntLogo} /></Col>}
-                    {projects.py && <Col md={8}><Card.Img className="cardLogo" src={PyLogo} /></Col>}
+                    {projects.html && <Col xs={3}><Card.Img className="cardLogo" src={HtmlLogo} /></Col>}
+                    {projects.css && <Col xs={3}><Card.Img className="cardLogo" src={CssLogo} /></Col>}
+                    {projects.js && <Col xs={3}><Card.Img className="cardLogo" src={JsLogo} /></Col>}
+                    {projects.sass && <Col xs={3}><Card.Img className="cardLogo" src={SassLogo} /></Col>}
+                    {projects.react && <Col xs={3}><Card.Img className="cardLogo" src={ReactLogo} /></Col>}
+                    {projects.grunt && <Col xs={3}><Card.Img className="cardLogo" src={GruntLogo} /></Col>}
+                    {projects.py && <Col  xs={6} md={8}><Card.Img className="cardLogo" src={PyLogo} /></Col>}
                     </Row>
-                   
+                    
                 </Card.Body>
-                <row>
-                    {projects.git && <Col md={6}><a target="_blank" rel="noopener noreferrer" href={projects.gitLink}><Button>GitHub</Button></a></Col>}
-                    {projects.git && <Col md={6}><Button>Live</Button></Col>}
-                </row>
-                <Button className="disabled">Live Demo</Button>
+                <PortfolioBtn projects={projects} />
             </Card>
 
         </Col>

@@ -9,12 +9,15 @@ export const projects = [
         img: require("../assets/img/head_2.svg"),
         git: true,
         gitLink: "https://github.com/P1wP/basicWebTemplate",
+        live: false,
+        liveLink: "",
         html: true,
         js: true,
         react: false,
         sass: false,
         css: true,
-        grunt: false
+        grunt: false,
+        py: false
     },
     {id: 2, 
         title: "Hangman Game",
@@ -22,12 +25,15 @@ export const projects = [
         img: require("../assets/img/head_2.svg"),
         git: true,
         gitLink: "https://github.com/P1wP/basicWebTemplate",
+        live: false,
+        liveLink: "",
         html: true,
         js: true,
         react: true,
         sass: true,
         css: false,
-        grunt: false
+        grunt: false,
+        py: false
     },
     {id: 3, 
         title: "Basic web project creator",
