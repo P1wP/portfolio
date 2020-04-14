@@ -9,15 +9,15 @@ import {
     NavLink
 } from "react-router-dom";
 
-import Container from "react-bootstrap/Container";
 
 // PAGES
 import Home from "../pages/home/Home";
-import Portfolio from "../pages/portfolio/portfolio";
+import Portfolio from "../pages/portfolio/Portfolio";
 import Skills from "../pages/skills/skills";
 import Cv from "../pages/cv/Cv"
 import About from "../pages/about/About";
 import Contact from "../pages/contact/Contact"
+import  Face1  from '../../assets/img/head_2.svg';
 
 
 function Layout(){
@@ -26,7 +26,7 @@ function Layout(){
         <Router>
             <Navbar bg="dark" variant="dark" expand="lg">
                 <NavLink to="/" exact>
-                    <Navbar.Brand>Portfolio</Navbar.Brand>
+                    <Navbar.Brand><img className = "nav_img" src={Face1} alt="face"></img></Navbar.Brand>
                 </NavLink>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
@@ -52,7 +52,7 @@ function Layout(){
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-            <Container>
+            <div>
                 <Switch>
                     <Route path="/" exact component={Home} />
                     <Route path="/portfolio" exact component={Portfolio} />
@@ -63,7 +63,7 @@ function Layout(){
                     
                     
                 </Switch>
-            </Container>
+            </div>
         </Router>
         
     );
