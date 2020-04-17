@@ -88,7 +88,7 @@ export const projects = [
         title: "Project creator",
         discription: "I got sick of creating the same files over and over again. So I decided to automate the process. By running the “py” file, A terminal will ask for a project name, whether or not it should include JQuery, Bootstrap, FontAwesome and if it should start the SASS interpreter or not. ", 
         img: require("../assets/img/projectCreator.png"),
-        git: true,
+        git: false,
         gitLink: "https://github.com/P1wP/basicWebTemplate",
         live: false,
         liveLink: "",

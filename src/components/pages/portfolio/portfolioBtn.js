@@ -34,8 +34,23 @@ function PortfolioBtn({projects}){
                         <FontAwesomeIcon icon={['fab', 'github']} />  
                     </Button>
                 </a>
-                <a target="_blank" rel="noopener noreferrer"  href={linkUrl}>
+                
                     <Button disabled className="btnDemo">
+                        <FontAwesomeIcon icon={['fas', 'link']} />
+                    </Button>
+                
+            </>
+        )
+    }
+    else if( !git && link){
+        return(
+            <>
+                    <Button disabled className="btnGit"> 
+                        <FontAwesomeIcon icon={['fab', 'github']} /> 
+                    </Button>
+                
+                <a target="_blank" rel="noopener noreferrer"  href={linkUrl}>
+                    <Button className="btnDemo">
                         <FontAwesomeIcon icon={['fas', 'link']} />
                     </Button>
                 </a>
@@ -45,16 +60,15 @@ function PortfolioBtn({projects}){
     // else
     return(
             <>
-                <a target="_blank" rel="noopener noreferrer"  href={gitUrl}>
                     <Button disabled className="btnGit"> 
                         <FontAwesomeIcon icon={['fab', 'github']} /> 
                     </Button>
-                </a>
-                <a target="_blank" rel="noopener noreferrer"  href={linkUrl}>
-                    <Button className="btnDemo">
+                
+                
+                    <Button disabled className="btnDemo">
                         <FontAwesomeIcon icon={['fas', 'link']} />
                     </Button>
-                </a>
+                
             </>
     )
 }

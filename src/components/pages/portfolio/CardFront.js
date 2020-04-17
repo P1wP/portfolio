@@ -2,6 +2,8 @@ import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
+import Particles from 'react-particles-js';
+import { config } from "../../../constants/background";
 
 //import GitLogo from "../../../assets/logo/git.png";
 import HtmlLogo from "../../../assets/logo/html.png";
@@ -23,8 +25,10 @@ function CardFront({projects}){
     return(
         <div className = "card__flip__front">
             {/* PROJECT TITLE */}
+            <div>
             <h2 className="card__flip__front--title">{projects.title}</h2>
-
+            <Particles params={config} />
+            </div>
             {/* PROJECT IMAGE */}
             <div className="card__flip__front--img" style={divStyle} >
 
