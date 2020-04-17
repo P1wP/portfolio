@@ -15,7 +15,7 @@ export const config = {
         },
         //SHAPE
         shape: {
-            type: "circle",
+            type: "none",
             stroke: {
                 width: 0,
                 color: "#000000"
@@ -50,7 +50,7 @@ export const config = {
         line_linked: {
             enable: true,
             distance: 200,
-            color: "#ffffff",
+            color: "#000000",
             opacity: 0.4,
             width: .7
         },

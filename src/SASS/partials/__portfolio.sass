@@ -1,7 +1,15 @@
+#portfolio
+    //background: linear-gradient(90deg, rgba(255, 255, 255, .5) 13%, rgba(235, 223, 223, 1) 50%, rgba(255, 255, 255, .5) 87%)
+    background: linear-gradient(90deg, rgba(235, 223, 223, 1) 0%,  rgba(255,255,255, 1) 50%,  rgba(235, 223, 223, 1) 100%)
+    min-height: 100vh
+    //235, 223, 223, 1
+.card
+    border: none
+
 .card-img
-    max-height: 150px
-.card-body
-    
+    //max-height: 150px
+
+
 .card-title
     margin-top: 10px
 .h5
@@ -10,5 +18,50 @@
     letter-spacing: 1px
 
 .cardLogo
-    width: 100%
+    width: 65%
     height: auto
+
+.card__flip__front
+    &--img
+        width: 100%
+        height: calc(100% - 46px)
+    &--stack
+        position: absolute
+        bottom: 0px
+        background-color: rgba(0, 0, 0, 0.5)
+        padding: 5px 0px
+        width: 100%
+
+.btnGit
+    border-radius: 0
+    width: 100%
+    background-color: #f1f1f1
+    border-color: #000000
+    border-bottom: none
+    color: #111111
+    font-size: 2.5rem
+    line-height: 0
+    &:hover
+        background-color: #111111
+        color: #f1f1f1
+    &:disabled
+        background-color: red
+
+.btnDemo
+    border-radius: 0 0 .25rem .25rem
+    border-color: #000000
+    width: 100%
+    background-color: #f1f1f1
+    color: #111111
+    font-size: 2.5rem
+    line-height: 0
+    &:hover
+        background-color: #111111
+        color: #f1f1f1
+    &:disabled
+        background-color: red
+
+.btn-primary
+    //border-color: #000000
+
+    
