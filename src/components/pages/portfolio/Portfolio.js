@@ -8,20 +8,23 @@ import PortfolioItem from "./PortfolioItem";
 
 function Portfolio(){
     return(
+
         <div id="portfolio">
-        <h1>Check out my Projects</h1>
-        <Container>
-        
 
-            <Row>
-            {projects.map((project)=>{
-                    return(
-                        <PortfolioItem key={project.id} projects={project}/>
-                    );
-                })}
-            </Row>
+            <div className="headline">
+                <h1>$Portfolio</h1>
+            </div>
 
-        </Container>
+            <Container>
+                <Row>
+                    {projects.map((project)=>{
+                        return(
+                            <PortfolioItem key={project.id} projects={project}/>
+                        );
+                    })}
+                </Row>
+            </Container>
+
         </div>
     );
 }
