@@ -2,7 +2,7 @@
     min-height: 100vh
 .card
     border: none
-    margin-bottom: 1rem
+    margin-bottom: 2.5rem
     &__inner
         border: none
     &-title
@@ -25,35 +25,32 @@
 .btnGit
     border-radius: 0
     width: 100%
-    //background-color: #444242
-    //border-color: #0e0d0d
+    border: none
+    background-color: $gitBtn
     border-bottom: none
-    //color: #f8f6f6
+    color: $whiteBlue
     font-size: 2.5rem
     line-height: 0
     &:hover
-        //background-color: #222121
+        background-color: $gitBtnHover
         //color: #f8f6f6
     &:disabled
         border-color: $blackBlue
         //background: #f85f5f
-        background: $disabled
+        background: $red
         //filter: grayscale(40%)
 
 .btnDemo
     border-radius: 0 0 .25rem .25rem
-    //border-color: #000000
     width: 100%
-    //background-color: #5393fa
-    //color: #f8f6f6
+    color: $whiteBlue
     font-size: 2.5rem
     line-height: 0
     &:hover
-        //background-color: #115cd4
-        //color: #f8f6f6
+
     &:disabled
         border-color: $blackBlue
-        background: $disabled
+        background: $red
         filter: grayscale(00%)
 
 
