@@ -1,0 +1,80 @@
+.timeline h2
+    text-align: left    
+.timeline
+    display: flex
+    flex-direction: column
+    position: relative
+    margin: 40px 
+    // CREATE VERTICAL LINE
+    &::after
+        background-color: $darkBlue // CHANGE WITH COLOR SCHEME
+        content: ''
+        position: absolute
+        left: calc( 50% - -0px  )
+        width: 4px
+        height: 100%
+
+    // EXPERIENCE ITEMS
+    &__container
+        //box-shadow: 0 0 5px rgba(0, 0, 0, 0.1)
+        padding: 10px 40px
+        position: relative
+        //background-color: inherit
+        width: 50%
+        &::after
+            // CIRCLES
+            content: ''
+            position: absolute
+            width: 25px
+            height: 25px
+            right: -17px
+            background-color: $lightBlue
+            border: 4px solid $red // CHNAGE WITH SCHEME
+            top: 15px
+            border-radius: 50%
+            z-index: 1
+    // ITEMS CONTENT
+    &__content
+        padding: 20px 30px
+        border-color: $whiteBlue
+        position: relative
+        
+        border-top: 1px solid $lightBlue
+        border-bottom: 1px solid $lightBlue
+
+// PLACE CONTAINER LEFT/RIGHT
+.left
+    left: -2px
+    &::after
+        top: 50%
+.right
+    left: 50%
+    // FIX RIGHT CIRCLE
+    &::after
+       left: -10px
+       top: 50%
+
+// MAKE RESPONSIVE
+
+@media screen and (max-width: 1000px)
+    .timeline
+        // MOVE VERTICLE LINE
+        &::after
+            left: -20px
+        // FULL WIDTH CONTAINER
+        &__container
+            width: 100%
+            margin-bottom: 15px
+    // MOVE CIRCLE
+    .right
+        left: 0px
+        &::after
+            left: -30px
+            top: 50%
+    .left
+        &::after
+            left: -28px
+            top: 50%
+
+
+

@@ -9,7 +9,7 @@ import PortfolioItem from "./PortfolioItem";
 function Portfolio(){
     return(
 
-        <div id="portfolio">
+        <div id="portfolio" className="page">
 
             <div className="headline">
                 <h1>$Portfolio</h1>

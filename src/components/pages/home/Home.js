@@ -3,7 +3,9 @@ import Heading from "../../typography/headings/Heading";
 import SubHeading from "../../typography/headings/SubHeading";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
+import Zoom from "react-reveal/Zoom";
+import Portfolio from "../portfolio/Portfolio";
+import Skills from "../skills/skills";
 
 //import  Face1  from '../../../assets/img/head_2.svg';
 import Particles from 'react-particles-js';
@@ -13,7 +15,7 @@ function Home(){
     
 
     return(
-        <div id="home" className="page container-fluid">
+        <div id="home" className="container-fluid">
             
             <Row>
                
@@ -21,7 +23,10 @@ function Home(){
                 <Col className="homeText" xs={12} sm={8} md={9} lg={9}>
                     <div className="center-center">
                         <Heading heading="Joachim Skog Sætre" />
-                        <SubHeading classProp="typewriter" subheading = "$ Front-end Developer" />
+                        <Zoom left duration={1500}>
+                            <SubHeading classProp="typewriter" subheading = "$ Front-end Developer" />
+                        </Zoom>
+                        
                     </div>
                 </Col>
 
@@ -29,9 +34,12 @@ function Home(){
                     
                 </Col>
             </Row>
+
             <Particles params={config} />
+
             
         </div>
+        
     );
 }
 

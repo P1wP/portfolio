@@ -14,7 +14,7 @@ import {
 import Home from "../pages/home/Home";
 import Portfolio from "../pages/portfolio/Portfolio";
 import Skills from "../pages/skills/skills";
-import Cv from "../pages/cv/Cv"
+import Cv from "../pages/cv/Cv.js";
 import About from "../pages/about/About";
 import Contact from "../pages/contact/Contact"
 import  Face1  from '../../assets/img/head_2.svg';
@@ -22,9 +22,9 @@ import  Face1  from '../../assets/img/head_2.svg';
 
 function Layout(){
     return (
-        
+        <>
         <Router>
-            <Navbar bg="dark" variant="dark" expand="lg">
+            <Navbar  expand="lg">
                 <NavLink to="/" exact>
                     <Navbar.Brand><img className = "nav_img" src={Face1} alt="face"></img></Navbar.Brand>
                 </NavLink>
@@ -41,10 +41,10 @@ function Layout(){
                             Skills
                         </NavLink>
                         <NavLink to="/cv" className="nav-link">
-                            Cv
+                            Resume
                         </NavLink>
-                        <NavLink to="/about" className="nav-link">
-                            About
+                        <NavLink  to="/about" className="nav-link">
+                            About Me
                         </NavLink>
                         <NavLink to="/contact" className="nav-link">
                             Contact
@@ -65,7 +65,8 @@ function Layout(){
                 </Switch>
             </div>
         </Router>
-        
+       
+        </>
     );
 };
 
