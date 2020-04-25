@@ -53,13 +53,13 @@ function ContactForm() {
         <Form className="contactForm" onSubmit={handleSubmit(onSubmit)} method="POST">
             {validated && <ValidMessage message=" Message is on its way! :)"></ValidMessage>}
             <Form.Group>
-                <Form.Label>FirstName</Form.Label>
+                <Form.Label>Name</Form.Label>
                 <Form.Control className="contactForm__input" name="firstName" placeholder="Enter your firstname" ref={register} />
                 {errors.firstName && <ErrorMessage>{errors.firstName.message}</ErrorMessage>}
             </Form.Group>
 
             <Form.Group>
-                <Form.Label>LastName</Form.Label>
+                <Form.Label>Surname</Form.Label>
                 <Form.Control className="contactForm__input" name="lastName" placeholder="Enter your lastname" ref={register} />
                 {errors.lastName && <ErrorMessage>{errors.lastName.message}</ErrorMessage>}
             </Form.Group>

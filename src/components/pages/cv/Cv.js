@@ -12,7 +12,7 @@ function Cv(){
     return(
         <div id="cv">
             <div className="headline">
-                <h1>$Resume</h1>
+                <h1>Resume</h1>
                 
             </div>
             <Container className="cv">
@@ -28,10 +28,10 @@ function Cv(){
                         <p>
                         I am located in Ski, Norway. 
                         I am a curious person, who strives to continually become better at what I do, to become the "go-to guy" 
-                        for any manner of questions or assignments.<br></br>
-                        I view myself as an outgoing introvert. I enjoy company and teamwork, but what I love is sitting alone in a peaceful environment.<br></br> 
+                        for any matter of questions or assignments.<br></br>
+                        I see myself as an outgoing introvert. I enjoy company and teamwork, but what I love is sitting alone in a peaceful environment.<br></br> 
                         </p>
-                        <p>My friends and colleagues would describe me as Faithful, honest, effective, straightforward, and Reliable.
+                        <p>My friends and colleagues would describe me as faithful, honest, effective, straightforward, and reliable.
                         </p>
             
                         <p>
@@ -56,7 +56,7 @@ function Cv(){
                                 <p>Languages:</p>
                             </Col>
                             <Col sm={4}>
-                                <p>Norwegian: First Language</p>
+                                <p>Norwegian: Native Language</p>
                                 <p>English: Written and Verbal</p>
                             </Col>
                             
@@ -69,7 +69,7 @@ function Cv(){
                     </Col>
 
                 </Row>
-                <div className="text-right">
+                <div className="text-center">
                 <Button>PDF</Button> Download PDF 
                 </div>
             </Container>

@@ -15,7 +15,7 @@ function PortfolioItem({projects}){
     return(
         
         <Col sm={12} md={6} lg={4} m={50}>
-        <Fade left duration={1200} fraction={1}>
+        <Fade left duration={1200} >
         <div className="card">
             <div className="card__inner">
                 <CardFront projects={projects} />

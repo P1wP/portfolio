@@ -76,9 +76,9 @@ export const projects = [
         discription: 'Re-did the "clone" project in React.js' , 
         img: require("../assets/img/clone.png"),
         git: true,
-        gitLink: "https://github.com/P1wP/CSS-Frameworks",
+        gitLink: "https://github.com/P1wP/css_Frameworks-ReactRemake", // UPDATE LINK
         live: true,
-        liveLink: "http://www.noob-at-work.com/noroff/cssfra/ca/index.html",
+        liveLink: "http://www.noob-at-work.com/noroff/cssfra/ca/index.html", // UPDATE LINK
         html: false,
         js: false,
         react: true,

@@ -13,7 +13,7 @@ function contact (){
     return(
         <div id="contact">
             <div className="headline">
-                <h1>$Contact</h1>
+                <h1>Contact</h1>
                 
             </div>
             <div id="contactInfo">

@@ -12,7 +12,7 @@ function Portfolio(){
         <div id="portfolio" className="page">
 
             <div className="headline">
-                <h1>$Portfolio</h1>
+                <h1>Portfolio</h1>
             </div>
 
             <Container>

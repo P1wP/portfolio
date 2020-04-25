@@ -27,7 +27,7 @@ function Footer(){
                             </li>
                             <li>
                                 <Link to={"/contact/"}>
-                                   Conatct
+                                   Contact
                                 </Link>
                             </li>
                            
