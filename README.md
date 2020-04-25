@@ -1,5 +1,5 @@
 # Live Website
-https://laughing-bell-f0f2e5.netlify.com/
+https://styletesting.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
