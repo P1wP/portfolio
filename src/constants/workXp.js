@@ -20,28 +20,28 @@ export const WorkXp = [
         id: 4,
         year: "Aug.2015 - Jan.2017",
         title:"Store Manager",
-        description: "I had reached my goal. And now I had the overall responsibility for everything - including staff and financials, hiring of staff and motivating them to do a great job. During my time at Kiwi Mysen the store saw an increase in sales, Not just because of me, but the <strong>Team</strong> as a whole.",
+        description: "I had reached my goal. And now I had the overall responsibility for everything - including staff and financials, hiring of staff and motivating them to do a great job. During my time at Kiwi Mysen the store saw an increase in sales, Not just because of me, but the Team as a whole.",
         company: "Kiwi Mysen"
     },
     {   
         id: 3,
         year: "Feb.2015 - Aug.2015",
         title:"Assistant Manager",
-        description: "My roll was to keep everything in order whenever the manager was away. I got the opportunity to hire and train a couple of new staff members before I left. Going trough that process makes you realise why recruitment agencies exists.",
+        description: "My role was to keep everything in order whenever the manager was away. I got the opportunity to hire and train a couple of new staff members before I got the opportunity to manage my own store.",
         company: "Kiwi Fagerstrand"
     },
     {   
         id: 2,
         year: "Aug.2014 - Jan.2015",
         title:"Trainee",
-        description: "",
+        description: "I worked closely with the manager, taking part in all aspects of the day to day routines as well as future planning.",
         company: "Kiwi Sletta"
     },
     {   
         id: 1,
         year: "Oct.2006 - Aug.2014",
         title:"Store Clerk",
-        description: "First job, blah blah blah",
+        description: "The first job, Here I got to grow as a person. I got experience in leadership and management. This leads to me pursuing a career in the convince store industry.",
         company: "Kiwi Finstad"
     },
 ];

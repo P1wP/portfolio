@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 
 import {projects} from "../../../constants/Projects";
 import PortfolioItem from "./PortfolioItem";
-//import PortfolioItemTwo from "./PortfolioItemTwo";
+import Footer from "../../footer/Footer";
 
 function Portfolio(){
     return(
@@ -16,6 +16,9 @@ function Portfolio(){
             </div>
 
             <Container>
+                <div className="intro">
+                    <h2>Take a look at some of my work </h2>
+                </div>
                 <Row>
                     {projects.map((project)=>{
                         return(
@@ -24,7 +27,7 @@ function Portfolio(){
                     })}
                 </Row>
             </Container>
-
+            <Footer/>
         </div>
     );
 }

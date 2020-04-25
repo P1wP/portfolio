@@ -13,7 +13,6 @@ import {
 // PAGES
 import Home from "../pages/home/Home";
 import Portfolio from "../pages/portfolio/Portfolio";
-import Skills from "../pages/skills/skills";
 import Cv from "../pages/cv/Cv.js";
 import About from "../pages/about/About";
 import Contact from "../pages/contact/Contact"
@@ -31,14 +30,11 @@ function Layout(){
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <NavLink to="/" exact className="nav-link">
+                        <NavLink to="/" exact className="nav-link homeLink">
                             Home
                         </NavLink>
                         <NavLink to="/portfolio" exact className="nav-link">
                             Portfolio
-                        </NavLink>
-                        <NavLink to="/skills" exact className="nav-link">
-                            Skills
                         </NavLink>
                         <NavLink to="/cv" className="nav-link">
                             Resume
@@ -56,9 +52,8 @@ function Layout(){
                 <Switch>
                     <Route path="/" exact component={Home} />
                     <Route path="/portfolio" exact component={Portfolio} />
-                    <Route path="/skills" exact component={Skills} />
                     <Route path="/cv" exact component={Cv} />
-                    <Route path="/about" component={About} />
+                    <Route path="/about" exact component={About} />
                     <Route path="/contact" exact component={Contact} />
                     
                     

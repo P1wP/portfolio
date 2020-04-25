@@ -1,5 +1,9 @@
 #portfolio
     min-height: 100vh
+
+.intro
+    margin-bottom: 25px
+
 .card
     border: none
     margin-bottom: 2.5rem
@@ -21,6 +25,7 @@
         bottom: 0px
         padding: 5px 0px
         width: 100%
+        background: rgba(230, 244, 241, .9)
 
 .btnGit
     border-radius: 0
@@ -33,12 +38,9 @@
     line-height: 0
     &:hover
         background-color: $gitBtnHover
-        //color: #f8f6f6
     &:disabled
         border-color: $blackBlue
-        //background: #f85f5f
         background: $red
-        //filter: grayscale(40%)
 
 .btnDemo
     border-radius: 0 0 .25rem .25rem
@@ -51,13 +53,3 @@
     &:disabled
         border-color: $blackBlue
         background: $red
-        filter: grayscale(00%)
-
-
-$darkBlue: rgb(0, 63, 119)     // H1 HEADLINES && FOOTER
-$mediumBlue: rgb(8, 100, 161)   // H2 HEADLINES && ITEM COLOR
-
-$lightBlue: #7fb9fe    // BG GRADIENT && SHADOW
-
-$blackBlue: rgb(0, 3, 48)    // TEXT ON LIGHT BG  
-$whiteBlue: rgb(230, 244, 241)    // TEXT ON DARK BG

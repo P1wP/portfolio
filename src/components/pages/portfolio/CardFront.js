@@ -13,6 +13,7 @@ import JsLogo from "../../../assets/logo/js.png";
 import ReactLogo from "../../../assets/logo/react.png";
 import GruntLogo from "../../../assets/logo/grunt.png";
 import PyLogo from "../../../assets/logo/py.png";
+import BootLogo from "../../../assets/logo/boot.png";
 
 function CardFront({projects}){
     const divStyle = {
@@ -42,6 +43,7 @@ function CardFront({projects}){
                     {projects.react && <Col xs={3}><Card.Img className="cardLogo" src={ReactLogo} /></Col>}
                     {projects.grunt && <Col xs={3}><Card.Img className="cardLogo" src={GruntLogo} /></Col>}
                     {projects.py && <Col  xs={6} md={8}><Card.Img className="cardLogo" src={PyLogo} /></Col>}
+                    {projects.boot && <Col  xs={3}><Card.Img className="cardLogo" src={BootLogo} /></Col>}
                 </Row>
             </div>
             </div>

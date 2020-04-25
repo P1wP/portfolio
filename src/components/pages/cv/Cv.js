@@ -2,6 +2,7 @@ import React from "react";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
+import Button from "react-bootstrap/Button";
 import WorkTimeline from "./WorkTimeline";
 import EduTimeline from "./EduTimeline";
 import Footer from "../../footer/Footer";
@@ -23,26 +24,19 @@ function Cv(){
                         <p className="cvHeader__birth">Born: 20. February 1990</p>
                     </Col>
 
-                    <Col sm={10} className="offset-sm-1">
-                        <p className="cv__about">
-                            I am located in Ski, Norway. 
-                            I am a curiouse and teachable person, who strive to continuosly become better at what I do, with the goal of become the "go to guy" for any manner of questions or assignments.<br></br>
-                            I look view myself as an outgoing introvert. I enjoy company and teamwork, but what i really love is peace and quiet and spending quality time in my own mind.<br></br> 
+                    <Col sm={10} className="offset-sm- cv__about">
+                        <p>
+                        I am located in Ski, Norway. 
+                        I am a curious person, who strives to continually become better at what I do, to become the "go-to guy" 
+                        for any manner of questions or assignments.<br></br>
+                        I view myself as an outgoing introvert. I enjoy company and teamwork, but what I love is sitting alone in a peaceful environment.<br></br> 
                         </p>
-                        <p>/ /My friends and colleagues would describe me as:
+                        <p>My friends and colleagues would describe me as Faithful, honest, effective, straightforward, and Reliable.
                         </p>
-                        <span>/ /My friends and colleagues would describe me as:</span>
-                        <ul>
-                    
-                            <li>Faithful</li>
-                            <li>Honest</li>
-                            <li>Straightforward</li>
-                            <li>Effective</li>
-                            <li>Reliable</li>
-                        </ul>
-                        <p className="cv__about">
-                            At the moment I am studying Front-End Development at Noroff vocational school.
-                            I am confident to pass my final exam this spring. And hopefully <strong>You</strong> will be my first employer ralted to this field.
+            
+                        <p>
+                        At the moment I am studying Front-End Development at Noroff vocational school. 
+                        I am confident to pass my final exam this spring. And hopefully, <strong>You</strong> will be my first employer related to this field.
                         </p>
                     </Col>
 
@@ -59,7 +53,7 @@ function Cv(){
                         <h3 className="cv__other--headline">Other</h3>
                         <Row>
                             <Col sm={2}>
-                                Languages:
+                                <p>Languages:</p>
                             </Col>
                             <Col sm={4}>
                                 <p>Norwegian: First Language</p>
@@ -76,7 +70,7 @@ function Cv(){
 
                 </Row>
                 <div className="text-right">
-                <button>PDF</button> Download PDF 
+                <Button>PDF</Button> Download PDF 
                 </div>
             </Container>
 

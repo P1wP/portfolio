@@ -2,7 +2,7 @@ import React from "react";
 
 function ValidMessage({ message }) {
     return (
-        <h1> { message } </h1>
+        <h3 className="text-center"> { message } </h3>
     );
 }
 

@@ -19,7 +19,7 @@ function WorkTimeline(){
                                 <div className="timeline__content">
 
                                     <Zoom right>
-                                        <h2>{work.year}</h2>
+                                        <h3>{work.year}</h3>
                                         <p className="timeline__company"><strong>{work.company}</strong></p>
                                         <p className="timeline__title">{work.title}</p>
                                         <p className="timeline__description">{work.description}</p>
@@ -36,7 +36,7 @@ function WorkTimeline(){
                             <div className="timeline__content">
 
                                 <Zoom left>
-                                    <h2>{work.year}</h2>
+                                    <h3>{work.year}</h3>
                                     <p className="timeline__company"><strong>{work.company}</strong></p>
                                     <p className="timeline__title">{work.title}</p>
                                     <p className="timeline__description">{work.description}</p>

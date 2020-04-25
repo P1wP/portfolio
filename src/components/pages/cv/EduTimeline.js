@@ -18,7 +18,7 @@ function EduTimeline(){
                                 <div className="timeline__content">
 
                                     <Zoom right>
-                                        <h2>{school.year}</h2>
+                                        <h3>{school.year}</h3>
                                         <p className="timeline__school"><strong>{school.school}</strong></p>
                                         <p className="timeline__title">{school.title}</p>
                                         <p className="timeline__description">{school.description}</p>
@@ -38,7 +38,7 @@ function EduTimeline(){
                             <div className="timeline__content">
 
                                 <Zoom left>
-                                    <h2>{school.year}</h2>
+                                    <h3>{school.year}</h3>
                                     <p className="timeline__school"><strong>{school.school}</strong></p>
                                     <p className="timeline__title">{school.title}</p>
                                     <p className="timeline__description">{school.description}</p>

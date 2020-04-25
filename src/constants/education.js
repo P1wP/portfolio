@@ -7,7 +7,7 @@ export const Education = [
         year: "2018 - 2020",
         school: "Noroff Fagskole",
         title: "Front-End developer",
-        description: "Technology education where visual design meets coding, web design and UX design",
+        description: "Technology education where visual design meets coding, web design and UX design.",
         link: "https://www.noroff.no/en/studies/vocational-school/front-end-development"
 
     },
@@ -16,7 +16,7 @@ export const Education = [
         year: "2014 - 2015",
         school: "KIWI skolen",
         title: "Trainee program",
-        description: "Learn the needed skills to sucsede as a store manager",
+        description: "Learn the needed skills to succeed as a store manager.",
         link: "https://kiwi.no/Informasjon/karriereside/karierrestigen/#Trainee"
 
     },
@@ -25,7 +25,7 @@ export const Education = [
         year: "2008 - 2010",
         school: "Drømtorp VGS",
         title: "Salg og service",
-        description: "Vocational eductaion, part of Norwegian upper secondary education.",
+        description: "Vocational education, part of Norwegian upper secondary education.",
         link: ""
 
     },

@@ -3,6 +3,8 @@ import Heading from "../../typography/headings/Heading";
 import SubHeading from "../../typography/headings/SubHeading";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 import Zoom from "react-reveal/Zoom";
 import Portfolio from "../portfolio/Portfolio";
 import Skills from "../skills/skills";
@@ -20,12 +22,27 @@ function Home(){
             <Row>
                
 
-                <Col className="homeText" xs={12} sm={8} md={9} lg={9}>
+                <Col className="home" xs={12} sm={8} md={9} lg={9}>
                     <div className="center-center">
                         <Heading heading="Joachim Skog Sætre" />
-                        <Zoom left duration={1500}>
+                        <Zoom left duration={1200}>
                             <SubHeading classProp="typewriter" subheading = "$ Front-end Developer" />
                         </Zoom>
+
+                        <div className="home__btns">
+                            <div className="home__btns--test">
+                                <Link to={"/portfolio/"}>
+                                   <Button className="home__btns--portfolio">Portfolio</Button>
+                                </Link>
+                            </div>
+                            <div className="home__btns--test">
+                                <Link to={"/contact/"}>
+                                   <Button className="home__btns--contact">Contact Me</Button>
+                                </Link>
+                            </div>
+
+                        </div>
+                               
                         
                     </div>
                 </Col>
