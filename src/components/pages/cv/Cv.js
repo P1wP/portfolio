@@ -7,6 +7,8 @@ import WorkTimeline from "./WorkTimeline";
 import EduTimeline from "./EduTimeline";
 import Footer from "../../footer/Footer";
 
+import PdfFile from "../../../assets/cv/Joachim_Skog_Satre-CV_Eng.pdf";
+
 
 function Cv(){
     return(
@@ -70,7 +72,9 @@ function Cv(){
 
                 </Row>
                 <div className="text-center">
-                <Button>PDF</Button> Download PDF 
+                    <form method="get" action={PdfFile}>
+                        <Button type="submit">Download!</Button>
+                    </form> 
                 </div>
             </Container>
 
