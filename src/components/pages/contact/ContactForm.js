@@ -50,7 +50,7 @@ function ContactForm() {
 
 	return (
         <div className="container">
-        <Form className="contactForm" onSubmit={handleSubmit(onSubmit)} method="POST">
+        <Form className="contactForm" onSubmit={handleSubmit(onSubmit)} method="POST" netlify>
             {validated && <ValidMessage message=" Message is on its way! :)"></ValidMessage>}
             <Form.Group>
                 <Form.Label>Name</Form.Label>
