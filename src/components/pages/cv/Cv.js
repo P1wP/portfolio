@@ -72,7 +72,7 @@ function Cv(){
 
                 </Row>
                 <div className="text-center">
-                    <form method="get" action={PdfFile}>
+                    <form method="get" target="_blank" rel="noopener noreferrer" action={PdfFile}>
                         <Button type="submit">Download!</Button>
                     </form> 
                 </div>
