@@ -16,7 +16,8 @@ function About(){
     console.log(curYear);
    
     return(
-        <div id="about" className="page">
+        
+        <div id="about" className="page" >
             <div className="headline">
                 <h1>$About Me</h1>   
             </div>

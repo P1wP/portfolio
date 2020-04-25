@@ -24,7 +24,7 @@ function Layout(){
         <>
         <Router>
             <Navbar  expand="lg">
-                <NavLink to="/" exact>
+                <NavLink to="/" exact className="homeLinkImg">
                     <Navbar.Brand><img className = "nav_img" src={Face1} alt="face"></img></Navbar.Brand>
                 </NavLink>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />

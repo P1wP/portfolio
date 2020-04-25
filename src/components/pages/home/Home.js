@@ -6,8 +6,7 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import Zoom from "react-reveal/Zoom";
-import Portfolio from "../portfolio/Portfolio";
-import Skills from "../skills/skills";
+import Footer from "../../footer/Footer";
 
 //import  Face1  from '../../../assets/img/head_2.svg';
 import Particles from 'react-particles-js';
@@ -54,7 +53,6 @@ function Home(){
 
             <Particles params={config} />
 
-            
         </div>
         
     );

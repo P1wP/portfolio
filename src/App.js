@@ -6,6 +6,7 @@ import { faLink } from '@fortawesome/free-solid-svg-icons'
 import './SASS/styles.sass';
 import Layout from "./components/layout/Layout";
 
+
 // FontAwesome  
 library.add(fab, faLink)
 
