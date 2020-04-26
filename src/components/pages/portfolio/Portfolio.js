@@ -1,7 +1,6 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
-
 import {projects} from "../../../constants/Projects";
 import PortfolioItem from "./PortfolioItem";
 import Footer from "../../footer/Footer";
